@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog API Exercises</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+
+<body>
+    <header>
+        <h1>Random Dog Photo Generator</h1>
+    </header>
+
+    <main>
+        
+        <form>
+            <label for="resultsNumber">Number of Results (1-50):</label>
+            <input type="number" id="resultsNumber" max="50" min="1" value="3">
+            <label for="dogBreed">Breed:</label>
+            <input type="text" id="dogBreed" value="hound">
+            <input type="submit" value="Show me some doggos!">
+        </form>
+
+        <section class='results hidden'>
+            <h2>Peep these puppers!</h2>
+            <img class='results-img' alt='random dog photo'>
+        </section>
+
+    </main>
+    
+    <script 
+        src="https://code.jquery.com/jquery-3.5.1.js" 
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+        crossorigin="anonymous">
+    </script>
+    <script src='index.js'></script>
+</body>
+</html>
+
